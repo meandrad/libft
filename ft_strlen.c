@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:17:39 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/14 21:10:33 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/14 21:23:26 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ size_t	ft_strlen(const char *str)
 	return (index);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 int main (void)
 {
 	char str[] = "meliss";
 
 	printf("%zu", ft_strlen(str));
 	return (0);
-}
+} */
