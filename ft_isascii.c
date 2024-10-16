@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:27:11 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/14 19:55:58 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:04:04 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isascii(int c)
 		return (1);
 }
 
-#include <stdio.h> 
+/* #include <stdio.h> 
 int main (void)
 {
 	int i; 
@@ -28,4 +28,4 @@ int main (void)
 	i = ft_isascii(128);
 	printf("%d", i);
 	return (0);
-}
+} */

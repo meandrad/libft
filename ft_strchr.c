@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 18:57:17 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/15 19:04:00 by meandrad         ###   ########.fr       */
+/*   Created: 2024/10/15 20:33:51 by meandrad          #+#    #+#             */
+/*   Updated: 2024/10/15 20:55:37 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c);
+#include <stdlib.h>
 
-int	ft_isalpha(int c)
-{
-	if((c < 65 || c > 90) && (c < 97 || c > 122))
-		return (0);
-	else 
-		return (1);
-}
-
-/* #include <stdio.h>
-int main (void)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i; 
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if(s[i] == c)
+			return((char *) &s[i]);
+		i++;
+	}
+	if (c == '\0')
+		return ((char *) &s[i]);
+	return (NULL);
+}
+
+/* #include <stdio.h> 
+int main (void)
+{
+	int c; 
+	const char s[] = "You're doing";
+	char *result;
 	
-	i = ft_isalpha('0');
-	printf("%d\n", i);
-	return (0);
+	c = '\0';
+	
+	result = ft_strchr(s, c);
+
+	printf("%s", result);
 } */
