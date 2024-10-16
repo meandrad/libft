@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:44:54 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/15 22:32:53 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/15 22:40:22 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,17 @@ int	ft_atoi(const char *nptr)
 }
 
 /* #include <stdio.h>
+#include <stdlib.h>
 int main (void)
 {
 	const char *nptr;
 	int result;
+	int result2;
 	
 	nptr = "-1234";
 	result = ft_atoi(nptr);
+	result2 = atoi(nptr);
 	
-	printf("%d", result);
+	printf("%d\n", result);
+	printf("%d", result2);
 } */
