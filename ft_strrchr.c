@@ -6,15 +6,17 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:56:35 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/15 21:33:51 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:00:14 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> 
+#include <stdlib.h>
+
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	int			i;
 	const char	*store;
+
 	store = NULL;
 	i = 0;
 	while (s[i] != '\0')

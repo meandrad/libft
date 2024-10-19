@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:33:51 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/15 20:55:37 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:56:08 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i; 
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if(s[i] == c)
-			return((char *) &s[i]);
+		if (s[i] == c)
+			return ((char *) &s[i]);
 		i++;
 	}
 	if (c == '\0')
@@ -35,7 +35,7 @@ int main (void)
 	const char s[] = "You're doing";
 	char *result;
 	
-	c = '\0';
+	c = 256;
 	
 	result = ft_strchr(s, c);
 

@@ -3,31 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
+/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:26:49 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/15 16:25:27 by macmac           ###   ########.fr       */
+/*   Updated: 2024/10/19 17:58:16 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> 
+#include <stdlib.h>
+
 size_t	ft_strlen(const char *str);
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	index; 
-	
-	index = 0;
+	size_t	i;
+
+	i = 0;
 	if (dstsize > 0)
 	{
-		while (src[index] != '\0' && index < (dstsize - 1))
+		while (src[i] != '\0' && i < (dstsize - 1))
 		{
-			dst[index] = src[index];
-			index++;
+			dst[i] = src[i];
+			i++;
 		}
-		dst[index] = '\0';
+		dst[i] = '\0';
 	}
-	return	(ft_strlen(src));
+	return (ft_strlen(src));
 }
 
 /* #include <stdio.h>

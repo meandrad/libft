@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 20:17:39 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 17:59:01 by meandrad         ###   ########.fr       */
+/*   Created: 2024/10/19 17:02:20 by meandrad          #+#    #+#             */
+/*   Updated: 2024/10/19 17:50:31 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *str)
+void	ft_bzero(void *s, size_t n)
 {
-	int	i;
+	unsigned char	*tmp_s;
+	size_t			i;
 
+	tmp_s = (unsigned char *)s;
 	i = 0;
-	while (str[i] != '\0')
+	while (i < n)
 	{
+		tmp_s[i] = '\0';
 		i++;
 	}
-	return (i);
 }
 
-/* #include <stdio.h>
-int main (void)
+/* int main (void)
 {
-	char str[] = "meliss";
+	char s[] = "ola";
 
-	printf("%zu", ft_strlen(str));
+	ft_bzero(s, 3);
+
 	return (0);
 } */

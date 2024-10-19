@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:44:54 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/18 22:41:36 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:50:11 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ static int	ft_isspace(int c)
 {
 	if ((c >= 9 && c <= 13) || c == 32)
 		return (1);
-	else 
+	else
 		return (0);
 }
 
@@ -23,7 +23,7 @@ int	ft_atoi(const char *nptr)
 	int	i;
 	int	sign;
 	int	result;
-	
+
 	i = 0;
 	sign = 1;
 	result = 0;

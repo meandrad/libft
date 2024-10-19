@@ -6,11 +6,9 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:27:11 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/15 19:04:04 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:51:41 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_isascii(int c); 
 
 int	ft_isascii(int c)
 {

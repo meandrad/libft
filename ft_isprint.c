@@ -6,11 +6,9 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:37:08 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/14 19:52:17 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:52:10 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_isprint(int c); 
 
 int	ft_isprint(int c)
 {

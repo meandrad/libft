@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 19:30:27 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/15 20:38:05 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:59:25 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t j;
-	
+	size_t	i;
+	size_t	j;
+
 	i = 0;
 	if (little[0] == '\0')
 		return ((char *) big);

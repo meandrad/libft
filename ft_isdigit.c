@@ -6,11 +6,9 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:08:55 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/14 19:51:36 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:51:56 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_isdigit(int c);
 
 int	ft_isdigit(int c)
 {

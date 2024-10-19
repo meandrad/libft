@@ -6,15 +6,13 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:04:27 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/14 20:16:09 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:00:37 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c); 
-
 int	ft_tolower(int c)
 {
-	if(c >= 65 && c <= 90)
+	if (c >= 65 && c <= 90)
 		return (c += 32);
 	else
 		return (c);

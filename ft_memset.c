@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 20:17:39 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 17:59:01 by meandrad         ###   ########.fr       */
+/*   Created: 2024/10/19 15:59:55 by meandrad          #+#    #+#             */
+/*   Updated: 2024/10/19 17:55:25 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *str)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	int	i;
+	unsigned char	*tmp_s;
+	size_t			i;
 
+	tmp_s = (unsigned char *)s;
 	i = 0;
-	while (str[i] != '\0')
+	while (i < n)
 	{
+		tmp_s[i] = (unsigned char)c;
 		i++;
 	}
-	return (i);
+	return (tmp_s);
 }
 
 /* #include <stdio.h>
 int main (void)
 {
-	char str[] = "meliss";
+	char s[] = "Ola";
+	int c = 'a';
+	char *result;
 
-	printf("%zu", ft_strlen(str));
+	result = ft_memset(s, c, 3);
+	
+	printf("%s", result);
 	return (0);
 } */

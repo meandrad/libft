@@ -6,14 +6,16 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 19:05:42 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/18 20:58:56 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:55:08 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
+
 	if (dest == (void *)0 && src == (void *)0)
 		return (NULL);
 	i = 0;
@@ -21,7 +23,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	{
 		while (i < n)
 		{
-			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+			((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
 			i++;
 		}
 	}
