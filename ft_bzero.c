@@ -6,11 +6,11 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 17:02:20 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 17:50:31 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:35:53 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -33,4 +33,4 @@ void	ft_bzero(void *s, size_t n)
 	ft_bzero(s, 3);
 
 	return (0);
-} */
+}*/
