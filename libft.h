@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 18:46:55 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:32:48 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/19 20:04:48 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+char	*ft_strdup(const char *s);
 
 #endif
