@@ -1,43 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 19:49:11 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/20 16:26:51 by meandrad         ###   ########.fr       */
+/*   Created: 2024/10/20 16:39:36 by meandrad          #+#    #+#             */
+/*   Updated: 2024/10/20 19:10:54 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*cpy;
-	size_t	len;
-	size_t	i;
+	unsigned char	*tmp_dest;
+	unsigned char	*tmp_src;
+	size_t			i;
 
-	len = ft_strlen(s);
-	cpy = (char *)malloc(sizeof(char) * (len + 1));
-	if (cpy == NULL)
-		return (NULL);
+	tmp_dest = (unsigned char *)dest;
+	tmp_src = (unsigned char *)src;
 	i = 0;
-	while (s[i] != '\0')
+	if (tmp_dest > tmp_src)
 	{
-		cpy[i] = s[i];
-		i++;
+		while (n--)
+			tmp_dest[n] = tmp_src[n];
 	}
-	cpy[i] = '\0';
-	return (cpy);
+	else
+	{
+		while (i < n)
+		{
+			tmp_dest[i] = tmp_src[i];
+			i++;
+		}
+	}
+	return (dest);
 }
-/* #include <stdio.h>
-int main (void)
-{
-	char src[] = "alguem mim mata";
-	char *cpy = ft_strdup(src);
-	printf("a copia eh: %s\n", cpy);
-	free(cpy);
-
-	return(0);
-} */
