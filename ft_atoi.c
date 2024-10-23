@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:44:54 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 17:50:11 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/21 20:01:35 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int main (void)
 	int result;
 	int result2;
 	
-	nptr = "-1234";
+	nptr = "+1234";
 	result = ft_atoi(nptr);
 	result2 = atoi(nptr);
 	

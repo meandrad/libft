@@ -1,44 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 22:15:13 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/21 22:21:15 by meandrad         ###   ########.fr       */
+/*   Created: 2024/10/22 19:09:36 by meandrad          #+#    #+#             */
+/*   Updated: 2024/10/22 22:47:19 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	const unsigned char	*tmp_s1;
-	const unsigned char	*tmp_s2;
-	size_t				i;
+	int	i;
 
-	tmp_s1 = (unsigned char *)s1;
-	tmp_s2 = (unsigned char *)s2;
-	if (n == 0)
-		return (0);
 	i = 0;
-	while (i < n)
+	while (s[i] != '\0')
 	{
-		if (tmp_s1[i] != tmp_s2[i])
-			return (tmp_s1[i] - tmp_s2[i]);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
-	return (0);
 }
-
-/* #include <stdio.h>
+/* #include <fcntl.h> 
 int main (void)
 {
-	char s1[] = "teste";
-	char s2[] = "teste";
-
-	printf("%d", ft_memcmp(s1, s2, 5));
-
-	return (0);
+	int fd = open("test.txt", O_RDWR);
+	ft_putstr_fd("123", fd);
 } */
