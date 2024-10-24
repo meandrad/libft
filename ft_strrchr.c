@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:56:35 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:35:20 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/23 22:36:47 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int			i;
-	const char	*store;
+	int		i;
+	char	*store;
 
 	store = NULL;
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
-			store = &s[i];
+		if (s[i] == (char)c)
+			store = (char *)&s[i];
 		i++;
 	}
-	if (c == '\0')
+	if ((char)c == '\0')
 		return ((char *) &s[i]);
-	return ((char *) store);
+	return (store);
 }
 
 /* #include <stdio.h> 

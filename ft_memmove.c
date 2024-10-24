@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 16:39:36 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/20 19:10:54 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/23 22:14:02 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*tmp_dest;
-	unsigned char	*tmp_src;
-	size_t			i;
+	unsigned char		*tmp_dest;
+	const unsigned char	*tmp_src;
+	size_t				i;
 
 	tmp_dest = (unsigned char *)dest;
 	tmp_src = (unsigned char *)src;

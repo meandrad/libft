@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:09:33 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/22 22:47:01 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/23 22:46:46 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,5 @@ int main (void)
 {
 	int fd = open("test.txt", O_RDWR);
 	ft_putnbr_fd(-2147483648, fd);
-}  */
+}
+ */

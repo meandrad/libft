@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 20:11:55 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/20 19:08:13 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/23 22:11:06 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (nmemb > (size_t)-1 / size)
 		return (NULL);
 	tmp = malloc(nmemb * size);
-	ft_memset(tmp, 0, nmemb * size);
+	if (!tmp)
+		return (NULL);
+	ft_memset(tmp, 0, (nmemb * size));
 	return (tmp);
 }
 
