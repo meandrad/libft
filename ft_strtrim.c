@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 21:25:32 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/25 23:06:44 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/26 15:30:05 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	start;
-	int	end;
-	int	string_size;
-	char *string;
+	int		start;
+	int		end;
+	int		string_size;
+	char	*string;
 
 	if (!s1 || !set)
 		return (NULL);

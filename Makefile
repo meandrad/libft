@@ -6,7 +6,7 @@
 #    By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/19 18:19:46 by meandrad          #+#    #+#              #
-#    Updated: 2024/10/25 22:42:46 by meandrad         ###   ########.fr        #
+#    Updated: 2024/10/26 15:16:36 by meandrad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,9 @@ SRC = ft_atoi.c \
       ft_putstr_fd.c \
       ft_putendl_fd.c \
       ft_itoa.c \
-	  ft_strtrim.c
+	  ft_strtrim.c \
+	  ft_strmapi.c \
+	  ft_striteri.c
 
 OBJS = $(SRC:.c=.o)
 RM = rm -f
