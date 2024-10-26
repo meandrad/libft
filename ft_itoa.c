@@ -6,19 +6,19 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:51:52 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/25 21:14:36 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/25 21:23:00 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int count_number(int n)
+static int	count_number(int n)
 {
 	long	num;
 	int		i;
 
 	i = 0;
-	num  = n;
+	num = n;
 	if (num == 0)
 		return (1);
 	if (num < 0)
