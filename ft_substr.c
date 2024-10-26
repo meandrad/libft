@@ -6,7 +6,7 @@
 /*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:22:35 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/23 22:08:00 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/25 19:03:44 by meandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start >= s_len)
-		return ft_strdup("");
+		return (ft_strdup(""));
 	if (start + len > s_len)
 		sub_len = s_len - start;
-	else 
+	else
 		sub_len = len;
 	sub = (char *)malloc((sub_len + 1) * sizeof(char));
 	if (!sub)
