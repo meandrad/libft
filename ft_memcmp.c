@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 22:15:13 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/21 22:21:15 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:20:43 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/* #include <stdio.h>
-int main (void)
-{
-	char s1[] = "teste";
-	char s2[] = "teste";
-
-	printf("%d", ft_memcmp(s1, s2, 5));
-
-	return (0);
-} */

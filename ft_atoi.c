@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:44:54 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/21 20:01:35 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:22:16 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,19 +44,3 @@ int	ft_atoi(const char *nptr)
 	result = result * sign;
 	return (result);
 }
-
-/* #include <stdio.h>
-#include <stdlib.h>
-int main (void)
-{
-	const char *nptr;
-	int result;
-	int result2;
-	
-	nptr = "+1234";
-	result = ft_atoi(nptr);
-	result2 = atoi(nptr);
-	
-	printf("%d\n", result);
-	printf("%d", result2);
-} */

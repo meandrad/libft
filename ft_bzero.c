@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 17:02:20 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:35:53 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:22:02 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,7 @@ void	ft_bzero(void *s, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		tmp_s[i] = '\0';
+		tmp_s[i] = 0;
 		i++;
 	}
 }
-
-/* int main (void)
-{
-	char s[] = "ola";
-
-	ft_bzero(s, 3);
-
-	return (0);
-}*/

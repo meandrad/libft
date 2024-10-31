@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 19:30:27 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:35:04 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:18:46 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-/* #include <stdio.h> 
-int main (void)
-{
-	const char big[] = "You're doing great. Keep going"; 
-	const char little[] = "Keep";
-	char *result; 
-
-	result = ft_strnstr(big, little, 25);
-
-	printf("%s", result);
-} */

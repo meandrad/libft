@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:51:52 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/25 21:23:00 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:20:54 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,13 +59,3 @@ char	*ft_itoa(int n)
 	}
 	return (s);
 }
-/* #include <stdio.h>
-int main (void)
-{
-	int i;
-	char *result;
-	
-	i = -123;
-	result = ft_itoa(i);
-	printf("%s", result);
-} */

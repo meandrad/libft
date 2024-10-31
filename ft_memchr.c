@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 17:13:12 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:33:47 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:20:48 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/* #include <stdio.h>
-int main (void)
-{
-	char s[] = "You're doing great";
-	int c = 'd';
-	char *result; 
-
-	result = ft_memchr(s, c, sizeof(s));
-	printf("%s", result);
-	return (0);
-} */

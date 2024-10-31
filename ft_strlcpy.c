@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:26:49 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:21:46 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:19:22 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
-
-/* #include <stdio.h>
-int main (void)
-{
-	char dest[10];
-	char src[] = "teste";
-
-	printf("%zu", ft_strlcat(dest, src, 5));
-
-	return (0);
-} */

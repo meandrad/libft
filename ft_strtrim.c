@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 21:25:32 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/26 15:30:05 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:18:36 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	string[string_size] = '\0';
 	return (string);
 }
-/* #include <stdio.h>
-int main (void)
-{
-	char *s = "abababaMelissa Andradeabababa";
-	char *set = "ab";
-	char *result;
-
-	result = ft_strtrim(s, set);
-	printf("%s\n", result);
-	free(result);
-} */

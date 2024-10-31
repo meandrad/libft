@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 20:11:55 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/23 22:11:06 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:21:20 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_memset(tmp, 0, (nmemb * size));
 	return (tmp);
 }
-
-/* #include <stdio.h>
-int main (void)
-{
-	printf("%zu", (size_t)-1);
-} */

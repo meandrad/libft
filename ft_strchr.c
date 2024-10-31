@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 20:33:51 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/23 22:38:35 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:19:57 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *) &s[i]);
 	return (NULL);
 }
-
-/* #include <stdio.h> 
-int main (void)
-{
-	int c; 
-	const char s[] = "You're doing";
-	char *result;
-	
-	c = 256;
-	
-	result = ft_strchr(s, c);
-
-	printf("%s", result);
-} */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:22:35 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/25 19:03:44 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:18:29 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(sub, s + start, sub_len + 1);
 	return (sub);
 }
-/* #include <stdio.h>
-int main (void)
-{
-	char s[] = "Melissa Andrade"; 
-	char *result;
-
-	result = ft_substr(s, 0, 7); 
-	printf("%s\n", result);
-} */

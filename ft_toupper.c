@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:40:18 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 18:01:31 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:18:20 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-/* #include <stdio.h>
-int main (void)
-{
-	int i; 
-
-	i = ft_toupper('p');
-	printf("%c", i);
-	return (0);
-} */

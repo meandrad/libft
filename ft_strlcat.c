@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 22:05:46 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:21:26 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:22:57 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + index] = '\0';
 	return (dst_len + src_len);
 }
-
-/*#include <stdio.h> 
-int main (void)
-{
-	char dst[10] = 'hello,';
-	const char src[] = ' world!';
-	size_t result;
-
-	result = ft_strlcat(dst, src, 10);
-	
-	printf("%d", result);
-}*/

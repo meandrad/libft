@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:27:11 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 17:51:41 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:21:08 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,3 @@ int	ft_isascii(int c)
 	else
 		return (1);
 }
-
-/* #include <stdio.h> 
-int main (void)
-{
-	int i; 
-	
-	i = ft_isascii(128);
-	printf("%d", i);
-	return (0);
-} */

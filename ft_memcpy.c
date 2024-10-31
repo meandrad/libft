@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 19:05:42 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:34:21 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:20:38 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/* #include <stdio.h> 
-int main (void)
-{
-	char src[] = "teste";
-	char dest[10] = "Olaaaaaa";
-	char *result;
-	size_t i = 10;
-
-	result = ft_memcpy(dest, src, i);
-	printf("%s", result);
-}*/

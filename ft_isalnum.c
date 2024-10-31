@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:16:42 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 17:51:17 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:21:16 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,3 @@ int	ft_isalnum(int c)
 	else
 		return (1);
 }
-/* #include <stdio.h> 
-int main (void)
-{
-	int i;
-
-	i = ft_isalnum('P');
-	printf("%d", i);
-	return (0);
-	
-} */

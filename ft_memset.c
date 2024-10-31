@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:59:55 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/19 19:34:29 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:20:30 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (tmp_s);
 }
-
-/* #include <stdio.h>
-int main (void)
-{
-	char s[] = "Ola";
-	int c = 'a';
-	char *result;
-
-	result = ft_memset(s, c, 3);
-	
-	printf("%s", result);
-	return (0);
-} */

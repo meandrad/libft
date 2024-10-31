@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 19:03:52 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/25 19:50:44 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:18:50 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/* #include <stdio.h>
-int main (void)
-{
-	char *s1 = "ola";
-	char *s2 = "ola";
-	int result;
-
-	result = ft_strncmp(s1, s2, 4);
-	printf("%d\n", result);
-} */

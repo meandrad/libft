@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:49:11 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/23 21:06:09 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:19:49 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ char	*ft_strdup(const char *s)
 	cpy[i] = '\0';
 	return (cpy);
 }
-/* #include <stdio.h>
-int main (void)
-{
-	char src[] = "";
-	char *cpy = ft_strdup(src);
-	printf("a copia eh: %s\n", cpy);
-	free(cpy);
-
-	return(0);
-} */

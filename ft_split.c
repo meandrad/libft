@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:47:03 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/28 21:39:38 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:20:04 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,13 +93,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (split);
 }
-
-/* #include <stdio.h> 
-int main (void)
-{
-	char *s = "Melissa Andrade"; 
-	char **result; 
-	
-	result = ft_split(s, ' ');
-	printf("%s\n%s", result[0],result[1]);
-} */

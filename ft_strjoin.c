@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macmac <macmac@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 21:11:15 by meandrad          #+#    #+#             */
-/*   Updated: 2024/10/25 19:03:03 by meandrad         ###   ########.fr       */
+/*   Updated: 2024/10/31 13:19:35 by macmac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	concat[len1 + len2] = '\0';
 	return (concat);
 }
-/* #include <stdio.h>
-int main (void)
-{
-	char	*s1 = "Melissa";
-	char	*s2 = " Andrade";
-	char	*result;
-	
-	result = ft_strjoin(s1, s2); 
-	printf("%s\n", result);
-} */
