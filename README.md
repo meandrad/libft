@@ -62,7 +62,7 @@ This will generate the `libft.a` file.
 #### Step 2: Main
 
 ```c
-#include "includes/libft.h"
+#include "libft.h"
 
 int main(void)
 {
