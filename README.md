@@ -1,4 +1,4 @@
-# libft
+# Libft
 
 This repository contains a custom implementation of the **libft** library in C, providing essential functions for string manipulation, memory management, and other common tasks.
 
