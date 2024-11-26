@@ -1,8 +1,8 @@
-### libft
+# libft
 
 This repository contains a custom implementation of the **libft** library in C, providing essential functions for string manipulation, memory management, and other common tasks.
 
-### Functions
+## Functions
 - **ft_isalpha**: Checks if a character is alphabetic.
 - **ft_isdigit**: Checks if a character is a digit.
 - **ft_isalnum**: Checks if a character is alphanumeric.
@@ -48,7 +48,7 @@ This repository contains a custom implementation of the **libft** library in C, 
 - **ft_putendl_fd**: Prints a string followed by a newline to a specified file descriptor.
 - **ft_putnbr_fd**: Prints an integer to a specified file descriptor.
 
-### Example Usage
+## Example Usage
 
 #### Step 1: Compilation
 To compile the library, run the following command:
