@@ -1,70 +1,24 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: meandrad <meandrad@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/19 18:19:46 by meandrad          #+#    #+#              #
-#    Updated: 2024/10/28 21:18:01 by meandrad         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-NAME = libft.a
+NAME = push_swap
 CC = cc
-FLAGS = -Wall -Wextra -Werror
-SRC = ft_atoi.c \
-      ft_bzero.c \
-      ft_calloc.c \
-      ft_memchr.c \
-      ft_memcmp.c \
-      ft_memcpy.c \
-      ft_memset.c \
-      ft_memmove.c \
-      ft_isalnum.c \
-      ft_isalpha.c \
-      ft_isascii.c \
-      ft_isdigit.c \
-      ft_isprint.c \
-      ft_tolower.c \
-      ft_toupper.c \
-      ft_strchr.c \
-      ft_strlcat.c \
-      ft_strlcpy.c \
-      ft_strlen.c \
-      ft_strnstr.c \
-      ft_strrchr.c \
-      ft_strdup.c \
-      ft_substr.c \
-      ft_strjoin.c \
-      ft_strncmp.c \
-      ft_putchar_fd.c \
-      ft_putnbr_fd.c \
-      ft_putstr_fd.c \
-      ft_putendl_fd.c \
-      ft_itoa.c \
-	  ft_strtrim.c \
-	  ft_strmapi.c \
-	  ft_striteri.c \
-	  ft_split.c
-
-OBJS = $(SRC:.c=.o)
-RM = rm -f
+FLAGS = -Wall -Wextra -Werror -g
+SRCS =
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
-	
-%.o: %.c libft.h
+	@$(MAKE) -C libft
+	$(CC) $(FLAGS) $(OBJS) ./libft/libft.a -o $(NAME)
+
+%.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS)
+	rm -f $(OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	 rm -f $(NAME)
 
-re: fclean all
+re: clean fclean
 
 .PHONY: all clean fclean re
